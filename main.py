@@ -22,7 +22,7 @@ st.subheader("Learn about root causes, prevention and cure for any disease")
 
 input_disease = st.text_input("Which disease you would like to know about?")
 
-input_number = st.number_input("How many root cause, prevention and cure do you want me to provide?", min_value = 1, max_value = 5, value = 1, step = 1)
+input_number = st.number_input("How many root causes, prevention and cure do you want me to provide?", min_value = 1, max_value = 5, value = 1, step = 1)
 
 if st.button("Generate"):
     medical_advises = medical_advise_generator.run(number = input_number, disease = input_disease)
