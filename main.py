@@ -4,8 +4,8 @@ from langchain_openai import ChatOpenAI
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 
-# os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+#os.environ["OPENAI_API_KEY"] = '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'
 
 medical_advise_template = """
 Can you give me {number} main root causes, prevention and cure for {disease}.
